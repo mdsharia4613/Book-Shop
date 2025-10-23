@@ -10,6 +10,7 @@ import Root from './Components/Root/Root.jsx';
 import Error from './Components/Error/Error.jsx';
 import Home from './Components/Home/Home.jsx';
 import Dasboard from './Components/Daaboard/Dasboard.jsx';
+import BookDetails from './Components/BookDetails/BookDetails.jsx';
 
 const router = createBrowserRouter([
   {
@@ -20,6 +21,10 @@ const router = createBrowserRouter([
       {
         path: '/',
         element: <Home></Home>
+      },
+      {
+        path: 'books/:bookId',
+        element: <BookDetails></BookDetails>
       },
       {
         path:'Dasboard',
