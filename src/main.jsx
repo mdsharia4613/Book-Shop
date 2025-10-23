@@ -10,7 +10,6 @@ import Root from './Components/Root/Root.jsx';
 import Error from './Components/Error/Error.jsx';
 import Home from './Components/Home/Home.jsx';
 import Dasboard from './Components/Daaboard/Dasboard.jsx';
-import Lisred_Book from './Components/Listed_Book/Lisred_Book.jsx';
 
 const router = createBrowserRouter([
   {
@@ -26,10 +25,7 @@ const router = createBrowserRouter([
         path:'Dasboard',
         element: <Dasboard></Dasboard>
       },
-      {
-        path: 'Lisred_Book',
-        element: <Lisred_Book></Lisred_Book>
-      }
+     
     ]
   },
 ]);
