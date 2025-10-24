@@ -1,3 +1,4 @@
+import Swal from 'sweetalert2'
 
 const getStoresReadList = () => {
     // read list
@@ -34,7 +35,8 @@ const addToStoredWhishList = (id) => {
     else{
         storedWhishList.push(id);
         const storedWhishStr = JSON.stringify(storedWhishList);
-        localStorage.setItem('whis list', storedWhishStr)
+        localStorage.setItem('whis-list', storedWhishStr)
+        
     }
 
 }
@@ -43,6 +45,7 @@ const addToStorestReadList = (id) => {
     const storedList = getStoresReadList();
     if(storedList.includes(id)){
         console.log(id, 'already exsits in the read list')
+        Swal.fire("book is added");
     }
     else{
         storedList.push(id);
@@ -52,4 +55,4 @@ const addToStorestReadList = (id) => {
 }
 
 
-export { addToStorestReadList, addToStoredWhishList, getStoresReadList }
+export { addToStorestReadList, addToStoredWhishList, getStoresReadList, getStoredWhishList }

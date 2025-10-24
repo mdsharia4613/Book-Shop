@@ -11,7 +11,7 @@ const ListedBooks = () => {
 
     useEffect(() => {
         const storeadList = getStoresReadList ();
-
+        
         const storedReadListInt = storeadList.map(id => parseInt(id));
 
         console.log(storeadList, storedReadListInt, allBook);
